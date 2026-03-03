@@ -80,7 +80,7 @@
                         <?php foreach ($recentOrders as $order): ?>
                             <tr class="hover:bg-gray-50 transition">
                                 <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">
-                                    <a href="/admin/orders/<?= $order['id'] ?>" class="hover:text-blue-600"><?= htmlspecialchars($order['order_number']) ?></a>
+                                    <span class="text-gray-900"><?= htmlspecialchars($order['order_number']) ?></span>
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600 font-medium"><?= htmlspecialchars($order['first_name'] . ' ' . $order['last_name']) ?></td>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><?= date('d M Y', strtotime($order['created_at'])) ?></td>
