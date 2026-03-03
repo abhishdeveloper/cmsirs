@@ -1,0 +1,17 @@
+{
+    "name": "ecommerce/medicine-brand",
+    "description": "Custom High-Performance E-commerce Platform for a Medicine Brand",
+    "type": "project",
+    "require": {
+        "php": "^8.0",
+        "phpmailer/phpmailer": "^6.8",
+        "dompdf/dompdf": "^2.0",
+        "razorpay/razorpay": "^2.8",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
